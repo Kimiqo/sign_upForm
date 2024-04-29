@@ -1,0 +1,28 @@
+:root{
+    --border_color: black;
+}
+
+body{
+    display: flex;
+    margin: 0px;
+
+}
+
+.pic_logo{
+    width: 30%;
+    height: 99vh;
+    border: 1px solid var(--border_color);
+    text-align: center;
+    
+}
+
+.info{
+    width: 70%;
+    border: 1px solid var(--border_color);
+    padding-left: 5px;
+}
+
+.form{
+    display: flex;
+    width: auto;
+}
