@@ -1,28 +1,91 @@
 :root{
     --border_color: black;
+    --input_height: 25px;
+    --input_width: 250px;
+    --bg_color: rgb(247, 246, 246);
+    --left_padding: 25px;
+    --fontStyle: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    --input_shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 body{
     display: flex;
     margin: 0px;
-
+    font-family: var(--fontStyle);
+    background-color: var(--bg_color);
 }
 
 .pic_logo{
-    width: 30%;
-    height: 99vh;
-    border: 1px solid var(--border_color);
+    width: 43%;
+    height: 100vh;
+    background-color: #596D48;
     text-align: center;
     
 }
 
 .info{
-    width: 70%;
-    border: 1px solid var(--border_color);
-    padding-left: 5px;
+    width: 57%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50%;
 }
 
 .form{
     display: flex;
     width: auto;
+    
 }
+
+input{
+    width: var(--input_width);
+    height: var(--input_height);
+    border-color: #E5E7EB;
+    box-shadow: var(--input_shadow);
+}
+
+input:invalid{
+    border-color: red;
+}
+
+label{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#l_form{
+    margin-right: 70px;
+}
+
+.form_div{
+    padding: var(--left_padding);
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+}
+
+button{
+    background-color: #596D48;
+    margin-left: var(--left_padding);
+    height: 50px;
+    width: 210px;
+    border-radius: 10px;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    color: #596D48;
+}
+
+p{
+    padding-left: var(--left_padding);
+}
+
+.info>div>p{
+    font-size: 22px;
+}
+
